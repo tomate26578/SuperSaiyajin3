@@ -1,0 +1,104 @@
+/* Estilo general de la página */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #111111,
+        #301000,
+        #8a2d00
+    );
+
+    color: white;
+}
+
+
+/* Contenedor principal */
+
+.contenedor {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 40px auto;
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    border: 3px solid orange;
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 20px orange,
+        0 0 50px rgba(255, 166, 0, 0.4);
+}
+
+
+/* Texto "Este..." */
+
+.texto-inicial {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/* Imagen de Goku */
+
+.imagen-goku {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto;
+
+    filter: drop-shadow(0 0 15px #ffb300);
+}
+
+
+/* Título principal */
+
+.titulo-principal {
+    margin-top: 30px;
+
+    font-size: 38px;
+
+    color: #ffd000;
+
+    text-shadow:
+        2px 2px 0 #ff6600,
+        4px 4px 0 #8b0000,
+        6px 6px 8px black;
+
+    letter-spacing: 2px;
+}
+
+
+/* Adaptación para celular */
+
+@media (max-width: 600px) {
+
+    .contenedor {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .texto-inicial {
+        font-size: 24px;
+    }
+
+    .titulo-principal {
+        font-size: 27px;
+    }
+}
